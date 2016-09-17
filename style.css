@@ -1,0 +1,78 @@
+/*
+ Theme Name:   Screendoor
+ Theme URI:    https://github.com/amenity/Screendoor
+ Description:  Twenty Sixteen Child Theme for Susan Wallace
+ Author:       Amenity Applewhite
+ Author URI:   http://amenityapplewhite.com
+ Template:     twentysixteen
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+*/
+
+
+/**
+ * Typography
+ */
+
+ /**
+ * Elements
+ */
+
+
+ /**
+ * Navigation
+ */
+
+ /**
+ * Header
+ */
+.custom-logo {
+	max-width: 180px;
+}
+
+ /**
+ * Pages
+ */
+ .home .entry-title {
+    display: none;
+}
+
+ /**
+ * Sidebar
+ */
+
+/**
+ * Footer
+ */
+
+/**
+ * Media
+ */
+
+/** 
+ * MQ >= 710px
+ */
+@media screen and (min-width: 44.375em) {
+	.custom-logo {
+		max-width: 210px;
+	}
+}
+
+/**
+ * MQ >= 985px
+ */
+
+@media screen and (min-width: 61.5625em) {
+	.custom-logo {
+		max-width: 240px;
+	}
+}
+
+/**
+ * MQ >= 1200px
+ */
+
+/* @media screen and (min-width: 75em) {
+
+}*/
+
