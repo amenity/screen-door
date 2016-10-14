@@ -38,6 +38,7 @@ body {
  */
 header#masthead {
     padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 /* Hide Entry Title */
