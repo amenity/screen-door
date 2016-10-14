@@ -36,6 +36,11 @@ body {
  /**
  * Header
  */
+header#masthead {
+    padding-bottom: 1em;
+}
+
+/* Hide Entry Title */
 header.entry-header {
     position: absolute !important;
     top: -9999px !important;
@@ -67,6 +72,10 @@ header.entry-header {
 /**
  * Footer
  */
+.site-main {
+    margin-bottom: 1em;
+}
+
 .site-info {
 	text-align: center;
     margin-left: auto;
