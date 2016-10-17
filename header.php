@@ -19,6 +19,8 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php wp_head(); ?>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Halant" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -29,17 +31,13 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-main">
 				<div class="site-branding">
-					<?php twentysixteen_the_custom_logo(); ?>
-
-					<?php if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img id="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/SusanChop.svg" alt="Susan Wallace, Artist and Metal Artisan">
+					</a>
+					<?php if( 'page' == get_option( 'show_on_front' ) && is_front_page()   ) : ?>
+						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif;
-
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
+						<p class="site-title"><?php bloginfo( 'name' ); ?></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 

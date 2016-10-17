@@ -9,66 +9,76 @@
  License:      GNU General Public License v2 or later
 */
 
-
 /**
- * Typography
- */
-
- /**
- * Elements
+ * Basics
  */
 body {
     background: none; 
+    font-family: 'Halant', serif;
+	font-size: 1.3em;
 }
 
-/** 
-* Flush Columns 
-*/
 .no-sidebar  .entry-content {
-	margin-right: 8%;
-	margin-left: 8%;
+	margin-right: 2em;
+	margin-left: 2em;
 }
 
- /**
- * Navigation
- */
-
- /**
+/**
  * Header
  */
-header#masthead {
-    padding-bottom: 1em;
-    padding-top: 1em;
-}
 
-/* Hide Entry Title */
-header.entry-header {
+/* Hide Entry Title and Site Title */
+header.entry-header, h1.site-title, p.site-title {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;
 }
 
- /**
+.site-branding, .site-header-menu, .header-image {
+    margin: 0 auto;
+}
+
+.site-header {
+    padding: 1.8em 2em;
+}
+
+.site-branding {
+	width: 100%;
+}
+
+#logo {
+	display: block;
+    height: 12em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Navigation
+ */
+.main-navigation a {
+	font-family: 'Open Sans Condensed', sans-serif; 
+ 	font-size: 1.2em;  
+ 	margin: 0 0.875em;
+ 	padding: 0px;
+}
+
+.main-navigation li:hover > a, .main-navigation li.focus > a {
+    color: #14ADA9;
+}
+
+.main-navigation .current-menu-item > a {
+    font-weight: 300; 
+    color: #EB1B20;
+    border-bottom: solid 1px #14ADA9;
+}
+
+/**
  * Gallery Pages
  */
 .gallery-item {
     padding: 0 2% 4%;
 }
- /**
- * Press
- */
-#post-46 figure.wp-caption {
-    display: inline-block;
-    max-width: 32%;
-    padding: 0 2% 4%;
-    text-align: center;
-    vertical-align: top;
- }
-
-
- /**
- * Sidebar
- */
 
 /**
  * Footer
@@ -82,6 +92,7 @@ header.entry-header {
     margin-left: auto;
     margin-right: auto;
 }
+
 /**
  * Media
  */
@@ -90,9 +101,6 @@ header.entry-header {
  * MQ >= 710px
  */
 @media screen and (min-width: 44.375em) {
-	.custom-logo {
-		max-width: 210px;
-	}
 }
 
 /**
@@ -100,9 +108,7 @@ header.entry-header {
  */
 
 @media screen and (min-width: 61.5625em) {
-	.custom-logo {
-		max-width: 240px;
-	}
+
 }
 
 /**
