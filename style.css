@@ -16,6 +16,7 @@ body {
     background: none; 
     font-family: 'Roboto Slab', serif;
 	font-size: 1.3em;
+    font-weight: 300;
 }
 
 .no-sidebar  .entry-content {
@@ -32,7 +33,7 @@ body {
 }
 
 .site-header {
-    padding: 1.8em 2em;
+    padding: 1.8em 2em .5em;
     text-align: center;
 }
 
@@ -56,12 +57,18 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
     font-size: 1.45em;
+    font-weight: lighter!important;
+    letter-spacing:0.02em;
 }
 
 .site-description {
     color: #14ADA9;
     text-transform: lowercase;
     font-size: .82em;
+    font-weight: 300;
+    margin-top: 0;
+    line-height: 0.7em;
+    padding-bottom: 0.5em;
 }
 
 /* Hide Entry Title */
@@ -91,11 +98,34 @@ header.entry-header {
     border-bottom: solid 1px #14ADA9;
 }
 
+/* Responsive Menu */
+.menu-toggle, .menu-toggle.toggled-on, .menu-toggle.toggled-on:hover, .menu-toggle.toggled-on:focus {
+    font-family: 'Roboto Slab', serif;
+    text-transform: lowercase;
+    font-weight: 300;
+    background-color: #14ADA9;
+    border-color: white;
+    border-radius: 0;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+    background-color: transparent;
+    border-color: #14ADA9;
+    color: #14ADA9;
+}
+
 /**
  * Gallery Pages
  */
 .gallery-item {
     padding: 0 2% 4%;
+}
+
+.gallery-caption {
+    display: none;
 }
 
 /**
@@ -115,25 +145,44 @@ header.entry-header {
  * Media
  */
 
-/** 
- * MQ >= 710px
+/**
+ * Phone only
  */
-@media screen and (min-width: 44.375em) {
+
+@media only screen and (max-width: 40em) {
+
 }
 
 /**
- * MQ >= 985px
+ * 14.1 - >= 710px
+ */
+
+@media screen and (min-width: 44.375em) {
+    .gallery-caption {
+        display: block;
+    }
+}       
+
+/**
+ * 14.3 - >= 910px
+ */
+
+@media screen and (min-width: 56.875em) {
+    .site-description {
+        padding-bottom: 1.7em;
+    }
+
+    .site-header {
+        padding-bottom: 1.4em !important;
+    }
+}
+
+/**
+ * 14.4 - >= 985px
  */
 
 @media screen and (min-width: 61.5625em) {
 
-}
+}    
 
-/**
- * MQ >= 1200px
- */
-
-/* @media screen and (min-width: 75em) {
-
-}*/
 
