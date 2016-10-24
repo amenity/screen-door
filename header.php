@@ -20,24 +20,31 @@
 	<?php endif; ?>
 	<?php wp_head(); ?>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Halant" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<div class="site-inner">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
-
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-main">
 				<div class="site-branding">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img id="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/SusanChop.svg" alt="Susan Wallace, Artist and Metal Artisan">
-					</a>
-					<?php if( 'page' == get_option( 'show_on_front' ) && is_front_page()   ) : ?>
-						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+					<?php if ( is_front_page() ) : ?>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img id="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/SW.svg" alt="Susan Wallace initials logo">
+							<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+						</a>
 					<?php else : ?>
-						<p class="site-title"><?php bloginfo( 'name' ); ?></p>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img id="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/SW.svg" alt="Susan Wallace initials logo">
+							<p class="site-title"><?php bloginfo( 'name' ); ?></p>
+						</a>
+					<?php endif;
+
+					$description = get_bloginfo( 'description', 'display' );
+					if ( $description || is_customize_preview() ) : ?>
+						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 

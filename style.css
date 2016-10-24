@@ -14,7 +14,7 @@
  */
 body {
     background: none; 
-    font-family: 'Halant', serif;
+    font-family: 'Roboto Slab', serif;
 	font-size: 1.3em;
 }
 
@@ -27,19 +27,13 @@ body {
  * Header
  */
 
-/* Hide Entry Title and Site Title */
-header.entry-header, h1.site-title, p.site-title {
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
-}
-
 .site-branding, .site-header-menu, .header-image {
     margin: 0 auto;
 }
 
 .site-header {
     padding: 1.8em 2em;
+    text-align: center;
 }
 
 .site-branding {
@@ -48,9 +42,33 @@ header.entry-header, h1.site-title, p.site-title {
 
 #logo {
 	display: block;
-    height: 12em;
+    height: 8em;
     margin-left: auto;
     margin-right: auto;
+}
+
+.site-branding .site-title, .site-description {
+    text-align: center; 
+}
+
+.site-title {
+    color: #EB1B20;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.45em;
+}
+
+.site-description {
+    color: #14ADA9;
+    text-transform: lowercase;
+    font-size: .82em;
+}
+
+/* Hide Entry Title */
+header.entry-header {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
 }
 
 /**
