@@ -186,6 +186,7 @@ h1.entry-title {
 .featherlight-content .caption {
     font-family: 'Roboto Slab', serif;
     font-style: italic;
+    white-space: normal !important;
 }
 
 /**
