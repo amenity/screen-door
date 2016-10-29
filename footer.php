@@ -48,8 +48,8 @@
 					do_action( 'twentysixteen_credits' );
 				?>
 				<p>&copy; <?php echo date("Y") ?> Susan Wallace,  All Rights Reserved • Austin, Texas • 512.626.7872 • 
-				<a href="mailto&to=info@susanwallace.net">info@susanwallace.net</a></p>
-				<a href="http://www.houzz.com/pro/susanwallace/susan-wallace"><img src="http://st.hzcdn.com/static/badge181_25@2x.png" alt="Susan Wallace in Austin, TX on Houzz" width="250" border="0" /></a>
+				<a href="mailto:info@susanwallace.net">info@susanwallace.net</a></p>
+				<a href="http://www.houzz.com/pro/susanwallace/__public"><img src="http://st.hzcdn.com/static/badge181_25@2x.png" alt="Susan Wallace in Austin, TX on Houzz" width="250" border="0" /></a>
 			</footer>
 		</div>
 

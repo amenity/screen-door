@@ -181,6 +181,7 @@ h1.entry-title {
 .gallery-caption {
     display: none;
     font-size: .75em;
+    padding-right: .5em;
 }
 
 .featherlight-content .caption {
