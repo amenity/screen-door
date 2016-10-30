@@ -188,6 +188,7 @@ h1.entry-title {
     font-family: 'Roboto Slab', serif;
     font-style: italic;
     white-space: normal !important;
+    padding-right: 1em;
 }
 
 /**
